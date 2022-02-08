@@ -1,0 +1,66 @@
+<!doctype html>
+<!--
+ * Unidit Editor (https://nazrul.dev/unidit/)
+ * License https://nazrul.dev/unidit/license.html
+ * Copyright 2013-2018 Valeriy Nazrul Islam https://nazrul.dev
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<title>Unidit React Example</title>
+</head>
+<body>
+<header>
+	<nav>
+		<ul class="container">
+			<li><a href="https://nazrul.dev/unidit/">Unidit homepage</a></li>
+			<li><a href="https://nazrul.dev/unidit/docs/">Documentation</a></li>
+			<li><a href="https://github.com/xdan/unidit/">Github</a></li>
+			<li><a href="https://github.com/xdan/unidit/releases">Changelog</a></li>
+			<li style="float:right"><a href="https://github.com/xdan/unidit/releases/latest">Download</a></li>
+		</ul>
+	</nav>
+</header>
+<div id="main_container" class="container">
+	<div id="introduction">
+		<h3>JavaScript</h3>
+		<pre>
+import './app.css';
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import UniditEditor from "../src/UniditEditor";
+
+ReactDOM.render(&lt;UniditEditor
+  value={"test"}
+  config={{
+    readonly: false // all options from https://nazrul.dev/unidit/doc/
+  }}
+  onChange={console.log}
+/>, document.getElementById('editor'));
+        </pre>
+	</div>
+	<div class="result">
+		<div id="editor"></div>
+	</div>
+</div>
+<footer>
+	<nav>
+		<ul class="container">
+			<li><a href="https://nazrul.dev/unidit/">Unidit homepage</a></li>
+			<li><a href="https://nazrul.dev/unidit/docs/">Documentation</a></li>
+			<li><a href="https://github.com/xdan/unidit/">Github</a></li>
+			<li><a href="https://github.com/xdan/unidit/releases">Changelog</a></li>
+			<li style="float:right"><a href="https://github.com/xdan/unidit/releases/latest">Download</a></li>
+		</ul>
+	</nav>
+</footer>
+</body>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,700,700i" rel="stylesheet">
+
+<script src="app.js"></script>
+</html>
